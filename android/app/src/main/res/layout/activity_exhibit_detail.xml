@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_home_gradient" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="58dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="8dp" android:paddingEnd="12dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/buttonBack" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="48dp" android:layout_height="48dp" android:minWidth="0dp" android:text="‹" android:textColor="@color/ink" android:textSize="34sp" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="藏品详情" android:textColor="@color/ink" android:textSize="19sp" android:textStyle="bold" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/buttonFavorite" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="46dp" android:textColor="@color/accent_red" />
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:clipToPadding="false" android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingBottom="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="330dp" app:cardCornerRadius="26dp" app:cardElevation="6dp">
+                <com.codingkingwhm.feiyikaifa.common.ShadowArtView android:id="@+id/artView" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:id="@+id/textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:textColor="@color/ink" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:id="@+id/textMeta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:background="@drawable/bg_gold_pill" android:textColor="@color/ink" android:textSize="11sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="影人故事" android:textColor="@color/accent_red" android:textSize="14sp" android:textStyle="bold" />
+            <TextView android:id="@+id/textStory" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:lineSpacingExtra="6dp" android:textColor="@color/ink_soft" android:textSize="16sp" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" app:cardBackgroundColor="#FFF0D6" app:cardCornerRadius="18dp" app:strokeColor="#3AC99643" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="17dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="纹样寓意" android:textColor="#936319" android:textSize="14sp" android:textStyle="bold" />
+                    <TextView android:id="@+id/textMeaning" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textColor="@color/ink_soft" android:textSize="15sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="从了解走向创作" android:textColor="@color/ink" android:textSize="19sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton android:id="@+id/buttonTrace" android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="临摹纹样" android:textColor="@color/white" app:backgroundTint="@color/accent_red" app:cornerRadius="18dp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/buttonStage" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="52dp" android:layout_marginStart="8dp" android:layout_weight="1" android:text="操控影人" android:textColor="@color/teal" app:cornerRadius="18dp" app:strokeColor="@color/teal" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/buttonPoster" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="52dp" android:layout_marginStart="8dp" android:layout_weight="1" android:text="拍照搭台" android:textColor="#936319" app:cornerRadius="18dp" app:strokeColor="@color/gold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

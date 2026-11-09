@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/stage_dark">
+    <androidx.camera.view.PreviewView android:id="@+id/previewView" android:layout_width="match_parent" android:layout_height="match_parent" app:scaleType="fillCenter" />
+    <View android:layout_width="match_parent" android:layout_height="130dp" android:layout_gravity="top" android:background="#76160A09" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="70dp" android:layout_gravity="top" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="8dp" android:paddingEnd="12dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/buttonBack" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="48dp" android:layout_height="48dp" android:minWidth="0dp" android:text="‹" android:textColor="@color/white" android:textSize="34sp" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="采集舞台背景" android:textColor="@color/white" android:textSize="19sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="寻找留白充足、光线柔和的场景" android:textColor="@color/gold_light" android:textSize="11sp" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/buttonFlip" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="54dp" android:layout_height="48dp" android:minWidth="0dp" android:text="翻转" android:textColor="@color/white" android:textSize="12sp" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal|bottom" android:layout_marginBottom="122dp" android:background="@drawable/bg_gold_pill" android:text="照片将作为皮影海报的幕布背景" android:textColor="@color/ink" android:textSize="11sp" />
+    <com.google.android.material.card.MaterialCardView android:layout_width="84dp" android:layout_height="84dp" android:layout_gravity="center_horizontal|bottom" android:layout_marginBottom="26dp" app:cardBackgroundColor="#EFFFF8E9" app:cardCornerRadius="42dp" app:strokeColor="@color/gold" app:strokeWidth="4dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/buttonCapture" android:layout_width="match_parent" android:layout_height="match_parent" android:insetLeft="7dp" android:insetTop="7dp" android:insetRight="7dp" android:insetBottom="7dp" android:text="" app:backgroundTint="@color/accent_red" app:cornerRadius="36dp" />
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

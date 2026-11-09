@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink">#24140F</color>
+    <color name="ink_soft">#4C3028</color>
+    <color name="paper">#FFF8E9</color>
+    <color name="paper_deep">#F5E5C7</color>
+    <color name="accent_red">#B72D24</color>
+    <color name="accent_red_dark">#751712</color>
+    <color name="accent_red_light">#E35D42</color>
+    <color name="gold">#C99643</color>
+    <color name="gold_light">#F2CF7E</color>
+    <color name="teal">#126B67</color>
+    <color name="muted">#7C675B</color>
+    <color name="surface_soft">#F7EBD6</color>
+    <color name="stage_dark">#160B0A</color>
+    <color name="stage_red">#641B19</color>
+    <color name="white">#FFFFFF</color>
+</resources>

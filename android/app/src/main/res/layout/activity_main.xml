@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/paper" android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="20dp" android:paddingEnd="10dp">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="皮影展馆" android:textColor="@color/ink" android:textSize="27sp" android:textStyle="bold" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/buttonSearch" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="50dp" android:layout_height="50dp" android:minWidth="0dp" android:text="⌕" android:textColor="@color/ink" android:textSize="29sp" />
+    </LinearLayout>
+
+    <ScrollView android:id="@+id/scrollContent" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:clipToPadding="false" android:fillViewport="true" android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingBottom="18dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="430dp" app:cardCornerRadius="24dp" app:cardElevation="3dp">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/heroArt" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="牡丹花旦皮影" android:scaleType="centerCrop" android:src="@drawable/shadow_hero_v2" />
+                    <LinearLayout android:layout_width="172dp" android:layout_height="wrap_content" android:layout_gravity="top|end" android:layout_marginTop="78dp" android:layout_marginEnd="10dp" android:gravity="center" android:orientation="vertical" android:padding="8dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:text="一幕光影\n一段故事" android:textColor="@color/ink" android:textSize="27sp" android:textStyle="bold" />
+                        <com.google.android.material.button.MaterialButton android:id="@+id/buttonExplore" android:layout_width="154dp" android:layout_height="46dp" android:layout_marginTop="15dp" android:text="探索皮影  ›" android:textColor="@color/white" app:backgroundTint="@color/accent_red" app:cornerRadius="23dp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="188dp" android:layout_marginTop="14dp" android:orientation="horizontal">
+                <com.google.android.material.card.MaterialCardView android:id="@+id/cardExhibitOne" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:clickable="true" android:focusable="true" app:cardCornerRadius="20dp" app:cardElevation="2dp">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="皮影起源" android:scaleType="centerCrop" android:src="@drawable/shadow_hero_v2" />
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:background="#B51B0D0A" android:orientation="vertical" android:padding="14dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="皮影起源" android:textColor="@color/white" android:textSize="17sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="千年光影的来处  ›" android:textColor="@color/gold_light" android:textSize="11sp" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@+id/cardExhibitTwo" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginStart="12dp" android:layout_weight="1" android:clickable="true" android:focusable="true" app:cardCornerRadius="20dp" app:cardElevation="2dp">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/surface_soft" android:contentDescription="纹样图鉴" android:padding="4dp" android:scaleType="centerCrop" android:src="@drawable/pattern_peony_v2" />
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:background="#B51B0D0A" android:orientation="vertical" android:padding="14dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="纹样图鉴" android:textColor="@color/white" android:textSize="17sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="衣饰纹样与寓意  ›" android:textColor="@color/gold_light" android:textSize="11sp" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="68dp" android:background="#FFFDF7EB" android:elevation="10dp" android:gravity="center" android:orientation="horizontal" android:paddingStart="22dp" android:paddingEnd="22dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/navHome" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="展馆" android:textColor="@color/accent_red" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/navCreate" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="创作" android:textColor="@color/ink_soft" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/navWorks" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="作品" android:textColor="@color/ink_soft" />
+    </LinearLayout>
+</LinearLayout>

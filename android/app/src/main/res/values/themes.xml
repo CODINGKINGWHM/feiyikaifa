@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FeiyiKaifa" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_red</item>
+        <item name="colorPrimaryVariant">@color/accent_red_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/ink</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/paper</item>
+        <item name="android:navigationBarColor">@color/paper</item>
+        <item name="android:windowBackground">@color/paper</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Feiyi.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Feiyi.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Feiyi.Large</item>
+    </style>
+
+    <style name="ShapeAppearance.Feiyi.Small" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">10dp</item>
+    </style>
+    <style name="ShapeAppearance.Feiyi.Medium" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">18dp</item>
+    </style>
+    <style name="ShapeAppearance.Feiyi.Large" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerSize">28dp</item>
+    </style>
+</resources>
