@@ -1,0 +1,33 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+*.apk
+*.aab
+captures/
+.externalNativeBuild/
+.cxx/
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# Java / Spring Boot
+target/
+*.class
+*.jar
+*.war
+*.log
+
+# Runtime files and secrets
+.env
+.env.*
+!.env.example
+uploads/
+secrets.properties
+
+# Operating systems
+.DS_Store
+Thumbs.db
+desktop.ini
+
