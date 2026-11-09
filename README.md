@@ -20,8 +20,8 @@ feiyikaifa/
 ## 成员分工
 
 - A：Spring Boot、MySQL、皮影素材接口、云端作品管理和部署。
-- B：整体 UI、皮影展馆、详情、相机与照片导入。
-- C：纹样临摹与海报合成画布、Room 本地草稿、图片导出。
+- B：整体 UI、皮影展馆、详情、搜索收藏和页面导航。
+- C：纹样临摹、CameraX 拍照与照片导入、海报合成画布、Room 本地草稿和图片导出。
 
 详细边界见 [docs/team-division.md](docs/team-division.md)。
 
