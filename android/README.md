@@ -1,30 +1,38 @@
 # Android 客户端
 
-计划采用 Java、XML、AndroidX 和 Material Components。
+当前为 C 同学负责的“影间”创作模块技术原型，采用 Java、XML、自定义 View、Room 和本地文件存储。
 
-## 包结构建议
+## 运行要求
 
-```text
-com.codingkingwhm.feiyikaifa
-├─ common
-├─ data
-│  ├─ local
-│  ├─ remote
-│  ├─ model
-│  └─ repository
-├─ feature
-│  ├─ home
-│  ├─ detail
-│  ├─ drawing
-│  └─ drafts
-└─ sync
-```
+- Android Studio
+- Gradle JDK 17
+- Android SDK 36
+- Android 7.0 及以上设备
 
-## 模块边界
+## 运行步骤
 
-- B 负责 `feature/home`、`feature/detail` 等普通业务页面。
-- C 负责 `feature/drawing`、`feature/drafts`、`data/local` 和 `sync`。
-- A 与 Android 端共同维护 `data/remote` 中的接口 DTO。
+1. 使用 Android Studio 打开本目录 `android/`。
+2. 确认 Gradle JDK 为 Android Studio 自带的 JDK 17。
+3. 连接已经开启 USB 调试的真机。
+4. 运行 `app` 配置。
 
-正式 Android Studio 工程尚未生成。
+## 已实现的技术基础
+
+- 三张原创透明占位纹样，用于验证绘图引擎。
+- 画笔颜色与粗细调整。
+- 橡皮擦、撤销、重做、清空。
+- 底图透明度和显隐控制。
+- Room 草稿记录与 JSON 笔迹文件。
+- 草稿重新打开继续编辑。
+- PNG 导出到系统相册。
+
+## 正在升级
+
+- 皮影服饰纹样临摹素材。
+- 从相册选择或拍摄海报背景。
+- 透明皮影人物拖拽、缩放与旋转。
+- 绘画、影人、题字、边框的分层合成。
+- 海报草稿 JSON 与最终作品导出。
+
+正式接口契约见 `../docs/api-contract.md`，笔迹格式见 `../docs/stroke-format.md`，海报草稿格式见 `../docs/poster-format.md`。
 
